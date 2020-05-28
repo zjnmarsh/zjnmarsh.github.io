@@ -14,3 +14,22 @@
 .size {
     size: 5vw
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.item {
+    flex-basis: 7vw;
+    margin: 5px;
+
+}
+
+.top-space {
+    margin-top: 10px;
+}
