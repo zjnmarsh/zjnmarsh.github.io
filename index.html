@@ -10,32 +10,31 @@
 
     <body style="padding: 5px;">
 
-        <div uk-sticky>
-            <p uk-margin class="right" style="padding:5px; right:0; color:white;">
-
-                <a class="uk-button uk-button-default uk-button-small " href="https://abingdon.fireflycloud.net/dashboard">Firefly</a>
-                <a class="uk-button uk-button-default uk-button-small" href="https://mail.google.com/mail/u/1/#inbox">Gmail</a>
-                <a class="uk-button uk-button-default uk-button-small" href="https://drive.google.com/drive/u/1/my-drive">Drive</a>
-                <a class="uk-button uk-button-default uk-button-small" href="https://calendar.google.com/calendar/r">Calendar</a>
-                <a class="uk-button uk-button-default uk-button-small" href="https://scheduler.abingdon.org.uk">Scheduler</a>
-                <a class="uk-button uk-button-default uk-button-small" href="https://www.youtube.com">YouTube</a>
-                <a class="uk-button uk-button-default uk-button-small " href="https://notion.so">Notion</a>
-
-                <a class="uk-button uk-button-default uk-button-small" href="https://classroom.google.com/u/1/h">Classroom</a>
-
-                    <div uk-dropdown="pos: top-right">
-                        <ul class="uk-nav uk-dropdown-nav">
-                            <li><a href="https://classroom.google.com/u/1/c/MTU5NDg3NTA0ODI5">Maths Pure</a></li>
-                            <li><a href="https://classroom.google.com/u/1/c/NTQ1MTY5MTM0NzVa">Maths Stats & Mech</a></li>
-                            <li><a href="https://classroom.google.com/u/1/c/MzcyNTAxMTY5NzRa">CompSci Theory</a></li>
-                            <li><a href="https://classroom.google.com/u/1/c/NTk2ODg3NDQ4MDda">CompSci Programming</a></li>
-                            <li><a href="https://classroom.google.com/u/1/c/NTQ0ODgyNjk2ODla">Chemistry Inorgainc</a></li>
-                            <li><a href="https://classroom.google.com/u/1/c/NTc3OTQwMDUwMjNa">Chemistry Organic</a></li>
-                        </ul>
-                    </div>
-
-            </p>
-        </div>
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="https://mail.google.com/mail/u/1/#inbox">Firefly</a></li>
+                    <li><a href="https://drive.google.com/drive/u/1/my-drive">Mail</a></li>
+                    <li><a href="https://calendar.google.com/calendar/r">Drive</a></li>
+                    <li><a href="https://calendar.google.com/calendar/r">Calendar</a></li>
+                    <li><a href="https://scheduler.abingdon.org.uk">Scheduler</a></li>
+                    <li><a href="https://notion.so">Notion</a></li>
+                    <li>
+                        <a href="#">Classroom</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="https://classroom.google.com/u/1/c/MTU5NDg3NTA0ODI5">Maths Pure</a></li>
+                                <li><a href="https://classroom.google.com/u/1/c/NTQ1MTY5MTM0NzVa">Maths Mech</a></li>
+                                <li><a href="https://classroom.google.com/u/1/c/MzcyNTAxMTY5NzRa">CompSci Theory</a></li>
+                                <li><a href="https://classroom.google.com/u/1/c/NTk2ODg3NDQ4MDda">CompSci Mech</a></li>
+                                <li><a href="https://classroom.google.com/u/1/c/NTQ0ODgyNjk2ODla">Chemistry Inorganic </a></li>
+                                <li><a href="https://classroom.google.com/u/1/c/NTc3OTQwMDUwMjNa">Chemistry Organic</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
 
         <div>
@@ -55,6 +54,12 @@
                     <div class="item uk-card-hover" onclick="location.href='https://github.com'">
                         <img src="images/GitHub-Mark.png" alt="Image">
                     </div>
+                    <div class="item uk-card-hover" onclick="location.href='https://www.peterhigginson.co.uk/ARMlite/'">
+                        <img src="images/arm_logo.png" alt="Image">
+                    </div>
+                    <div class="item uk-card-hover" onclick="location.href='https://filestore.aqa.org.uk/resources/computing/AQA-75162-75172-ALI.PDF'">
+                        <img src="images/terminal_logo.png" alt="Image">
+                    </div>
                 </div>
             </div>
 
@@ -70,9 +75,6 @@
                 </div>
                 <div class="uk-card uk-card-default uk-margin-left uk-box-shadow-medium uk-box-shadow-hover-xlarge" onclick="location.href='https://drive.google.com/file/d/1z-blmT1r15ZNU1uSa-CMTbSF_NfAstM8/view?usp=sharing'">
                     <img src="images/books/learningpython-book.png" alt="Image">
-                </div>
-                <div class="uk-card uk-card-default uk-margin-left uk-box-shadow-medium uk-box-shadow-hover-xlarge" onclick="location.href='http://learnyouahaskell.com/chapters'">
-                    <img src="images/books/lyah.png" alt="Image">
                 </div>
             </div>
         </div>
@@ -157,8 +159,8 @@
                 <div class="uk-card uk-card-default uk-margin-left uk-box-shadow-medium uk-box-shadow-hover-xlarge" onclick="location.href='https://www.pearsonactivelearn.com/app/library/ebook?id=NzAzNzMzfGJvb2t8MTR8MA=='">
                     <img src="images/books/ma-edexcel-mech-2.jpg" alt="Image">
                 </div>
-                <div class="uk-card uk-card-default uk-margin-left uk-box-shadow-medium uk-box-shadow-hover-xlarge" onclick="location.href='https://docs.google.com/document/d/1lXrGKqCffAIM6vSgC8FhacNpXzQRi9wo73C0a3hRVnA/edit'">
-                    <img src="images/gdoc-logo.png" alt="Image">
+                <div class="uk-card uk-card-default uk-margin-left uk-box-shadow-medium uk-box-shadow-hover-xlarge" onclick="location.href='https://qualifications.pearson.com/content/dam/pdf/A%20Level/Mathematics/2017/specification-and-sample-assesment/Pearson_Edexcel_A_Level_GCE_in_Mathematics_Formulae_Book.pdf'">
+                    <img src="images/books/formula_booklet.png" alt="Image">
                 </div>
             </div>
         </div>
@@ -219,6 +221,36 @@
                 </div>
                 <div class="uk-card uk-card-default uk-margin-left uk-box-shadow-medium uk-box-shadow-hover-xlarge" onclick="location.href='https://drive.google.com/open?id=1_111VWFpwWgNdr3P1xGMtJgwByJtxuw5'">
                     <img src="images/books/tabgtmt-book.jpg" alt="The AB Guide to Music Theory">
+                </div>
+            </div>
+        </div>
+
+        <hr class="uk-divider-icon">
+
+        <div>
+            <h1 class="grey uk-heading-large">Japanese</h1>
+
+            <div>
+                <div class="container">
+                    <div class="item uk-card-hover" onclick="location.href='https://jisho.org'">
+                        <img src="images/jisho_logo.png" alt="Image">
+                    </div>
+                    <div class="item uk-card-hover" onclick="location.href='http://www.gavo.t.u-tokyo.ac.jp/ojad/eng/phrasing/index'">
+                        <img src="images/ojad_logo.png" alt="Image">
+                    </div>
+                    <div class="item uk-card-hover" onclick="location.href='http://www.yamasa.org/ocjs/kanjidic.nsf/SearchKanji3?OpenForm'">
+                        <img src="images/kanji.jpg" alt="Image">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="uk-flex uk-child-width-1-4 uk-child-width-1-5@m top-space">
+                <div class="uk-card uk-card-default uk-margin-left uk-box-shadow-medium uk-box-shadow-hover-xlarge" onclick="location.href='https://drive.google.com/file/d/11xZDyWBUIm0SO5CnJ_BWVUD7CyzypkYc/view?usp=sharing'">
+                    <img src="images/books/genki.jpg" alt="Music Theory in Practice">
+                </div>
+                <div class="uk-card uk-card-default uk-margin-left uk-box-shadow-medium uk-box-shadow-hover-xlarge" onclick="location.href='https://drive.google.com/file/d/11xZDyWBUIm0SO5CnJ_BWVUD7CyzypkYc/view?usp=sharing'">
+                    <img src="images/books/genki2.jpg" alt="Music Theory in Practice">
                 </div>
             </div>
         </div>
